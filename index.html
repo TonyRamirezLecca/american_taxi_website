@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-88399559-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-88399559-1');
+</script>
+
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TS4QHFH');</script>
+<!-- End Google Tag Manager -->
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="American Taxi has been providing Utah Valley with transportation for over 10 years. We strive our best to transport you quickly, safely, and in a clean environment."/>
+    <meta name="keywords" content="Taxi, Cab, Shuttle, Transportation, Airport, Provo, Utah, Orem, Pleasant Grove, PG, AF, American Fork, Lindon, Highland, Alpine, Salt Lake, Lehi, Saratoga Springs, Springville, Spanish Fork, Mapleton"/>
+    <title>American Taxi Utah - Airport Cab, Utah Valley Transportation</title>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TS4QHFH"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <nav>
+      <i class="fas fa-ellipsis-h dotMenu"></i>
+      <ul class="menu menuSelect">
+        <a href="#contact"><li>Contact</li></a>
+        <a href="#pricing"><li>Pricing</li></a>
+        <a href="#locations"><li>Locations</li></a>
+        <a href="#airport"><li>Airport</li></a>
+        <a href="#tours"><li>Tours</li></a>
+      </ul>
+    </nav>
+
+    <header>
+      <img src="Images/taxi1.jpg" id="headerImg" />
+      <div id="headerText">
+        <h1 id="title">
+          American <span style="color: #e1e154;">Taxi</span> Utah
+        </h1>
+
+        <ul id="headerList">
+          <li>Tours</li>
+          <li>Airport</li>
+          <li>Utah Valley</li>
+          <li>Special Services</li>
+        </ul>
+
+        <br /><br />
+
+        <div id="phone">
+          <h1><a href="tel:1-801-427-9448"> 1-801-427-9448 </a></h1>
+          <br />
+          <h3>on call 24/7</h3>
+        </div>
+      </div>
+    </header>
+
+    <div id="locations" class="locations">
+      <div class="textContainer">
+        <h1>Locations</h1>
+
+        <p>
+          Based out of Orem, UT. We Taxi all of Utah Valley and the Salt Lake
+          Valley.
+        </p>
+      </div>
+      <div id="map"></div>
+    </div>
+    <div id="pricing" class="pricing">
+      <div class="textContainer"></div>
+      <h1>Pricing</h1>
+      <div class="pricingIcons">
+        <div><i class="fas fa-money-check-alt"></i>Affordable</div>
+        <div><i class="fas fa-car"></i>Reliable</div>
+        <div><i class="fas fa-running"></i>Quick</div>
+      </div>
+      <br />
+      <p>
+        Pricing varies depending on where we are and where you are. Give us a
+        call for an excellent rate! We accept all cards.
+      </p>
+      <i class="fas fa-car-side movingCar"></i>
+    </div>
+    <div id="airport" class="airport">
+      <div class="textContainer"></div>
+      <h1>Airport Transportation <i class="fas fa-plane-departure"></i></h1>
+      <p>
+        We do airport drop-offs and pick-ups by appointment to make sure you
+        make it on time to your flight.
+      </p>
+      <div id="airportImgContainer">
+        <img src="Images/airport.jpg" id="airportImg" />
+      </div>
+    </div>
+    <div id="tours" class="tours">
+      <div class="textContainer"></div>
+      <h1>Local Tours</h1>
+      <p>
+        First time in Utah? We do tours around Salt Lake City, Park City,
+        Sundance, and Moab.
+      </p>
+      <div id="toursImgContainer">
+        <div class="toursImg"><img src="Images/delicateArch.jpg" /></div>
+        <div class="toursImg"><img src="Images/skiing.jpg" /></div>
+        <div class="toursImg"><img src="Images/saltLakeTemple.jpg" /></div>
+        <div class="toursImg"><img src="Images/capitalBuilding.jpg" /></div>
+      </div>
+    </div>
+
+    <section>
+      <div id="contact">
+        <h1>
+          <a href="tel:1-801-427-9448">
+            <span id="callBtn"> Call us today </span>
+          </a>
+        </h1>
+      </div>
+    </section>
+
+    <footer><h3>&copy; American Taxi Utah</h3><a href="privacypolicy.pdf">privacy policy</a></footer>
+  </body>
+
+  <script src="script.js"></script>
+  <script>
+    function initMap() {
+      var options = {
+        zoom: 10,
+        center: { lat: 40.2969, lng: -111.6946 }
+      };
+
+      var map = new google.maps.Map(document.getElementById("map"), options);
+
+      var markerOrem = new google.maps.Marker({
+        position: { lat: 40.2969, lng: -111.6946 },
+        map: map
+      });
+      var markerProvo = new google.maps.Marker({
+        position: { lat: 40.2338, lng: -111.6585 },
+        map: map
+      });
+      var markerLehi = new google.maps.Marker({
+        position: { lat: 40.3916, lng: -111.8508 },
+        map: map
+      });
+      var markerAF = new google.maps.Marker({
+        position: { lat: 40.3769, lng: -111.7958 },
+        map: map
+      });
+      var markerPG = new google.maps.Marker({
+        position: { lat: 40.3641, lng: -111.7385 },
+        map: map
+      });
+      var markerSpanishFork = new google.maps.Marker({
+        position: { lat: 40.115, lng: -111.6549 },
+        map: map
+      });
+      var markerSaltLake = new google.maps.Marker({
+        position: { lat: 40.7608, lng: -111.891 },
+        map: map
+      });
+      var markerEagleMountain = new google.maps.Marker({
+        position: { lat: 40.3141, lng: -112.0069 },
+        map: map
+      });
+    }
+  </script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBP0Nmt5png_GzOHi4hCfdwfYGZzX3p8rg&callback=initMap"
+    async
+    defer
+  ></script>
+</html>
